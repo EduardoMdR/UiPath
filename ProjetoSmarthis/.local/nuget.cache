@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2CFWfvTHf5O4Z57+ptL4u2fNLI3lXWw3lk1m9l+OfpQQk5B5g4ulryDwQgUgIBfgnpIWxnvCCnnlplb88d6iAw==",
+  "dgSpecHash": "hTzfkvyD+ufurDUu9R4GS/MkdwGDxm9tz/jesSJx2mJdwDDIFPqFkbmfVYJcFuujc3zVbbGNzGMLQIhRdr6Njw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\eduar\\Documents\\UiPath\\ProjetoSmarthis\\.local\\",
+  "projectFilePath": "C:\\Users\\eduar\\Documents\\GitHub\\UiPath\\ProjetoSmarthis\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\eduar\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",

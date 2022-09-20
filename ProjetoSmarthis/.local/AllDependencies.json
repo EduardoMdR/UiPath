@@ -6371,9 +6371,9 @@
     "restore": {
       "projectUniqueName": "ProjetoSmarthis",
       "projectName": "ProjetoSmarthis",
-      "projectPath": "C:\\Users\\eduar\\Documents\\UiPath\\ProjetoSmarthis\\.local",
+      "projectPath": "C:\\Users\\eduar\\Documents\\GitHub\\UiPath\\ProjetoSmarthis\\.local",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduar\\Documents\\UiPath\\ProjetoSmarthis\\.local"
+      "outputPath": "C:\\Users\\eduar\\Documents\\GitHub\\UiPath\\ProjetoSmarthis\\.local"
     },
     "frameworks": {
       "net461": {
