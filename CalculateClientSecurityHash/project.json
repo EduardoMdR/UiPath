@@ -3,6 +3,7 @@
   "description": "Project developed to practice the skills acquired in UiPath courses, developing a project that calculates a client's hash security code and updates its data on the ACME platform",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Credentials.Activities": "[2.0.0]",
     "UiPath.Excel.Activities": "[2.12.3]",
     "UiPath.System.Activities": "[22.4.4]",
     "UiPath.Testing.Activities": "[22.4.3]",
