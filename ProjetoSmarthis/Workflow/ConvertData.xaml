@@ -214,7 +214,7 @@
                 <InArgument x:TypeArguments="x:String">[Row.ItemArray(6).ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Nome_Estacao,Poluente,IQAR}]" DataTable="[DataRioDT]" DisplayName="Add Data Row AchieversDT" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Nome_Estacao,Poluente,IQAR}]" DataTable="[DataRioDT]" DisplayName="Add Data Row to DataRioDT" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
