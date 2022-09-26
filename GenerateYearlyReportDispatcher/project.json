@@ -3,6 +3,7 @@
   "description": "Project developed to improve tequinas at UiPath, focusing on Dispatcher and Executor",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Credentials.Activities": "[1.0.7495.12930]",
     "UiPath.Excel.Activities": "[2.12.3]",
     "UiPath.System.Activities": "[22.4.4]",
     "UiPath.Testing.Activities": "[22.4.3]",

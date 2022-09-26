@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JXYPtWxDZ1imf0boq//S2x7DVgvMw56VQ0KnZ3Za6Q/07VvWNHYKlmjjXuemkJ46HLQiX1RhD3BYUVXtBZ/E/w==",
+  "dgSpecHash": "U9c0E/iUJ96gZiqI9IWsK+DfQ/DiOajvRfL3/1zyGenD9bl2AWLcn8hpNXDNL2y0MVBGwedaO1bC3UaDHEShxg==",
   "success": true,
   "projectFilePath": "C:\\Users\\eduar\\Documents\\GitHub\\UiPath\\GenerateYearlyReportDispatcher\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\eduar\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\credentialmanagement\\1.0.2\\credentialmanagement.1.0.2.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\documentformat.openxml\\2.5.0\\documentformat.openxml.2.5.0.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.0\\microsoft.aspnet.signalr.client.2.4.0.nupkg.sha512",
@@ -62,6 +63,7 @@
     "C:\\Users\\eduar\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\uipath\\22.4.42.61951\\uipath.22.4.42.61951.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.3\\uipath.activities.runtimegovernance.1.1.3.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\uipath.credentials.activities\\1.0.7495.12930\\uipath.credentials.activities.1.0.7495.12930.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\uipath.excel.activities.2.12.3.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\uipath.imageprocessing\\22.4.1\\uipath.imageprocessing.22.4.1.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\uipath.ocr.activities\\3.6.2\\uipath.ocr.activities.3.6.2.nupkg.sha512",
