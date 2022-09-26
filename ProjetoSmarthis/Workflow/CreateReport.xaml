@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="CreateReport" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,1908" sap2010:WorkflowViewState.IdRef="CreateReport_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="CreateReport" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,2052" sap2010:WorkflowViewState.IdRef="CreateReport_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -62,22 +62,14 @@
       <AssemblyReference>System.Data.Entity</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="&#xD;&#xA;" DisplayName="CreateReport" sap:VirtualizedContainerService.HintSize="551,1972" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Aqui será separado os maiores, e os menores valores encontrados para cada conjunto de Estação com o Poluente&#xA;" DisplayName="CreateReport" sap:VirtualizedContainerService.HintSize="551,1987" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DT_FilteredTable" />
       <Variable x:TypeArguments="x:Int32" Name="Min" />
       <Variable x:TypeArguments="x:Int32" Name="Max" />
-      <Variable x:TypeArguments="scg:Dictionary(x:String, scg:List(x:Int32))" Name="teste">
-        <Variable.Default>
-          <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, scg:List(x:Int32))" ExpressionText="new Dictionary(of String, List(Of Int32))" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, scg:List(x:Int32))" Default="[new Dictionary(of String, List(Of Int32))]" Name="teste" />
       <Variable x:TypeArguments="x:Boolean" Name="NovaIteracao" />
-      <Variable x:TypeArguments="s:String[]" Name="Nomes">
-        <Variable.Default>
-          <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;CopacabanaO3&quot;,&quot;CopacabanaPI&quot;, &quot;CopacabanaNO2&quot;, &quot;São CristóvãoO3&quot;, &quot;São CristóvãoPI&quot;, &quot;São CristóvãoNO2&quot;, &quot;TijucaO3&quot;, &quot;TijucaPI&quot;, &quot;TijucaNO2&quot;, &quot;CentroO3&quot;, &quot;CentroPI&quot;, &quot;CentroNO2&quot;, &quot;BanguO3&quot;, &quot;BanguPI&quot;, &quot;BanguNO2&quot;}" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="s:String[]" Default="[{&quot;CopacabanaO3&quot;,&quot;CopacabanaPI&quot;, &quot;CopacabanaNO2&quot;, &quot;São CristóvãoO3&quot;, &quot;São CristóvãoPI&quot;, &quot;São CristóvãoNO2&quot;, &quot;TijucaO3&quot;, &quot;TijucaPI&quot;, &quot;TijucaNO2&quot;, &quot;CentroO3&quot;, &quot;CentroPI&quot;, &quot;CentroNO2&quot;, &quot;BanguO3&quot;, &quot;BanguPI&quot;, &quot;BanguNO2&quot;}]" Name="Nomes" />
       <Variable x:TypeArguments="sd:DataTable" Name="FinalTable" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -87,7 +79,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[DT_FilteredTable]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="509,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\Input\InputDataFilter.xlsx" />
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Iniciando os dicionários de listas de string com os valores (EstaçãoPoluente)&#xD;&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="509,123" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[Nomes]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Iniciando os dicionários de listas de string com os valores (EstaçãoPoluente)&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="509,123" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[Nomes]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
@@ -111,7 +103,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEach>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Nessa sequência será observado cada linha da tabela filtrada e verificar qual Estação e qual Poluente esta linha está associada.&#xD;&#xA;&#xD;&#xA;Para cada conjunto de estação e poluente, será salvo os valores mínimos e os valores máximos encontrados para fazer o envio desses dados futuramente.&#xD;&#xA;" DataTable="[DT_FilteredTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="509,346" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Nessa sequência será observado cada linha da tabela filtrada e verificar qual Estação e qual Poluente esta linha está associada.&#xA;&#xA;Para cada conjunto de estação e poluente, será salvo os valores mínimos e os valores máximos encontrados para fazer o envio desses dados futuramente.&#xA;" DataTable="[DT_FilteredTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="509,346" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -135,7 +127,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:BuildDataTable DataTable="[FinalTable]" DisplayName="Build Data Table AchieversDT" sap:VirtualizedContainerService.HintSize="509,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Nome_Estação_x0020_e_x0020_Poluente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Mínimo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Máximo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:BuildDataTable DataTable="[FinalTable]" DisplayName="Build Data Table AchieversDT" sap:VirtualizedContainerService.HintSize="509,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Nome_Estação_x0020_e_x0020_Poluente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Mínimo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Máximo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
     <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Percorrendo dicionários criados para ver quais são os valores máximos e mínimos&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="509,735" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[Nomes]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
@@ -164,21 +156,11 @@
             </ui:MultipleAssign>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke FindMaxMin workflow" sap:VirtualizedContainerService.HintSize="431,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="FindMaxMin.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <OutArgument x:TypeArguments="x:Int32" x:Key="out_Min">
-                  <mva:VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="Min" />
-                </OutArgument>
-                <OutArgument x:TypeArguments="x:Int32" x:Key="out_Max">
-                  <mva:VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="Max" />
-                </OutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_Nome">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="item" />
-                </InArgument>
-                <InArgument x:TypeArguments="scg:Dictionary(x:String, scg:List(x:Int32))" x:Key="in_Teste">
-                  <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, scg:List(x:Int32))" ExpressionText="teste" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:Boolean" x:Key="in_NovaIteracao">
-                  <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="NovaIteracao" />
-                </InArgument>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="out_Min">[Min]</OutArgument>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="out_Max">[Max]</OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_Nome">[item]</InArgument>
+                <InArgument x:TypeArguments="scg:Dictionary(x:String, scg:List(x:Int32))" x:Key="in_Teste">[teste]</InArgument>
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_NovaIteracao">[NovaIteracao]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{item,Min,Max}]" DataTable="[FinalTable]" DisplayName="Add Data Row to Final" sap:VirtualizedContainerService.HintSize="431,185" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
