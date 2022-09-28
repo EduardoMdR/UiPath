@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,2439</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,1581</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1_NavigateTo_WIDetails_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="37">
@@ -84,7 +84,7 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_NavigateTo_WIDetails" sap:VirtualizedContainerService.HintSize="924,2374" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_NavigateTo_WIDetails" sap:VirtualizedContainerService.HintSize="924,1516" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ClientInfo" />
       <Variable x:TypeArguments="x:String" Name="ClientName" />
@@ -97,68 +97,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="882,818" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="a5dbe21c-f789-40b1-889c-34c4389e37d9" Version="V2" WindowResize="Minimize">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="Acessando informações únicas de cada cliente que foi selecionado&#xA;" DisplayName="Acessando Informacoes Pessoais" sap:VirtualizedContainerService.HintSize="848,602" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="TableRow" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Calculate Client'" sap:VirtualizedContainerService.HintSize="806,466" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a5dbe21c-f789-40b1-889c-34c4389e37d9" Version="V1">
-              <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="376,250" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <uix:NGetText DisplayName="Get Text 'Client Information'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="a5dbe21c-f789-40b1-889c-34c4389e37d9" Version="V1">
-                    <uix:NGetText.Target>
-                      <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/87285110" DesignTimeRectangle="213, 411, 373, 60" ElementType="Text" FriendlyName="'Client ID:'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='                              KK58395                              Fritz Balke                              Romania                         ' /&gt;" Guid="781938ea-7898-487e-8a3a-fd7beb2e186e" InformativeScreenshot="cfbcee1dcf70de79df52a4c33c27db06.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target DesignTimeRectangle="213, 382, 373, 20" ElementType="Text" FriendlyName="'Client Information'" FullSelectorArgument="&lt;webctrl tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H4' type='' class='' aaname='Client Information Details' check:innerText='Client Information Details' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NGetText.Target>
-                    <uix:NGetText.Text>
-                      <OutArgument x:TypeArguments="x:String">[ClientInfo]</OutArgument>
-                    </uix:NGetText.Text>
-                  </uix:NGetText>
-                </Sequence>
-              </uix:NCheckState.IfExists>
-              <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="376,185" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[&quot;Não foi possível carregar dados do cliente&quot;]" />
-                </Sequence>
-              </uix:NCheckState.IfNotExists>
-              <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/87285110" DesignTimeRectangle="183, 316, 998, 41" ElementType="Text" FriendlyName="'Calculate Client'" FullSelectorArgument="&lt;webctrl aaname='Calculate Client Security Hash' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Calculate Client Security Hash' tag='DIV' type='' class='panel-heading' check:innerText='Calculate Client Security Hash' /&gt;" Guid="2e737df0-607b-4008-8b4b-bbffcbb7b520" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA+oAAAAtCAYAAAA5m5FDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVlSURBVHhe7dpbTtw6AIDhsyeWNTtBrGS6kErsoReJhy4AVe0TOWNnktiOc6FkwOf0s/RJDLnYSXj5J/zTGYZhGIZhGIZhGIbRzBhD/ffv392PHz+6b9++dV++fAEAAABuLDR4aPHQ5MOIof7r16/u6empe35+jj///PkTAAAAuLHQ4KHFQ5OHn8dQD/UeNtQOAgAAAG4rNHlo8xjqLy8v8VW7N+kAAADwMUKTf/36tQuNHkM9/F98bUcAAADgfYQ2F+oAAADQCKEOAAAADRHqAAAA0BChDgAAAA0R6gAAANAQoQ4AAAANEeoAAADQEKEOAAAADRHqAAAA0BChDgAAAA0R6gAAANCQG4X6U3c+3XV3d5PTp6fKfkseu/vLMfefa9te4fu5O92duvP3yraZMOfefZc9fTpl1313OndPyfbHh8vvHh6nfYvtfyqe63reJXHulbW9p+zaP9//+VoWj+3/Bl/3d1eXPjMAAIBbOz7UYxyXgdSH9/7Y+S+G+vXLiSIa+zi+7x7TzzeIvq1Qr81bru3DCHUAAIDRwaG+EkdlNF+DfnrDm0ZyGerX0B+M0TQP+uxN7e458/OP5wsRWPt9xfLb8fyepNE3O2ZlvnDc6dO5us54nuH31TXM79PS77Nzzb64eMNzuPx8jl8M9MeN27Nrvu8ey2cWxH0WvlB4Raj3X0wk0vgu/jZmxz3cV+89AADA0Y4N9Vpk1VyjaIqd8m10Gn5lcKWfdwTisJ5dcyZrL+Nw9drmUbhkMdQ35usjc/rcB/W0f/ychmemvNa6bD1Btqa3Pof8/syufZx3fi/7LykW7u3OUI/3b3Ztw5rL9eeft+49AADAkY4N9TI2XyGPxCSUVs+5JxCX4ro257BvH3npecf9qzE8X8eSeqhvz5ceFxXXtry2Qb/G4Y3w/K1wev2TMZIPfg7Z9iK2s20L6xpdg3vJYuBna56vP7V17wEAAI70waHeB9IYVlmc9eGUR1tpHlhbgbg+57BvsU+qGsPzdSyph/r2fG8P9UQ8dpjj+ryy3+VC7B79HLLtRaj3+yfrWpz3ojx2NH8zH8R5k2sb1pz9vriPQh0AAHhPx4b67oCZwnQIqTwEp/DLf196TSDumTPfd0949+pRWLMW6mvzHRrqo2TdG8/uuOdQ2T6L7ek/DMJ+q/d1Z6jH+eLzH75IWrjn8cum/O9EqAMAAO/p2FBfDdYkjCpxlYdgse8R/3K9a84hvvaH9yA/Vy4NvXqob8/3plBfuYfTeRfCdXDUc6htX3o2D+fLfdkI4sqxvfSe9j/n17Z+ven6hDoAAPCeDg71ixgxZXT2UZSFWRp98XOyPYuoecRO4dRvmyKqmKcM9c05k/iK29MY24rp61rG8/XiWpPzpNE3i9WV+bZisQ/bZHumvrbqObIYv8FzuB47u/bq2iprLtWOjdL1lmu/rne8tvQ6y2O37z0AAMCRjg/16BpqiTTwgj5gr0JoZaFahlNxvjTMhqCLLpGZhlsRVOtzTtuHtfbhOh1TXkNNNkdQRGQafVmsDp+TY9P50uOiMhbH+7D01ruytsq+5T7TMwiOeQ5Bfu3DedN9yrhesCvUL5+z9YXrusb6cE/j38K0Pb3Xm/ceAADgQDcKdXirENJiGAAA+PsIddoU3lpX35QDAAD8vwl1mtP/+7236QAAwN9JqAMAAEBDhDoAAAA0RKgDAABAQ4Q6AAAANESoAwAAQEOEOgAAADREqAMAAEBDhDoAAAA0RKgDAABAQ4Q6AAAANESoAwAAQEOEOgAAADRkFuoAAADAx8pC3TAMwzAMwzAMwzCMjxtC3TAMwzAMwzAMwzAaGn2ov3T/Angy5Jal7j/5AAAAAElFTkSuQmCC" InformativeScreenshot="c5c0c3627bb8840d20bfdfd756122e04.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
-              </uix:NCheckState.Target>
-            </uix:NCheckState>
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAReSURBVFhHvZdtbFNlFMcf3SxUfI0miLAEWdShCV+EGD9oUJBJAobwQb8IGklkKEQkcy8MZK90tGsnZbxsvkDmxsYkS8QFPhDYLIy+sbv2rhW3dYPFbGyVbYwJJMu2wzm3Prd317ZCc+uHf9vnPC/n13PPc57nMrZX6EPdQo39zyKf1wgAZJWQ2sJtzYVrkw+lDT9G5UbBZWB5TmC7XIlRHgnXJ4hSyecwAYwxAzawM/1EoKFSvLEh97eBjOw4xedmNg9k7LSFRO2sloEMg2Po0x3n+4tYMUaiUIr0SAiAiL5xwfrGqyvSt69hiZZuXzv6cwP+cQVAoRveqQtsizRBS33vHV6cTAD5agA0rG7o+SLSpHg0ODG9aGlFR+vy+kCl0l4p3HgpKkC6RgAA8GxSqQfY5zZgm22wq3XwFO+zOIeiA6z5OQyQctBXpTd6BdwZwrsNPVZuV2vJD3/YWOFl9xNmr5hULGwiW8v1OxvZpmZg5SKw7a2Y8e3Ax5c5g9EB1p4MA+hNnjssH7dlth2WHusMcrta8yt8wHLswIpwbEHbUW5P/e4KsK0XJDX2jBVw+30DPGkR7awIt8pOJ7xR03WO29VadNg/Ke1tLDJPfyvuUfbtbu5fn+MIvqK0HYmVAzMAzKJTAdCsXEQpBJimMQQwx+TNjzRm6PbUQ/x3lWc4cQC60nYZYOEhP+jxsTxqbAfMp3JurxZHNAY44p/iAHpFBB63eIF9jbmBJVhn9Bi5vdanPYAcASUA/mtgu7H24+H2nLVDttdoDZAaBWAB7Q4CwLo/d38cAE9Z7hsg4iOIC+B9BcDsfR6XdGrhFltW3XWe29VKq/JPSAAGHFsiyPs9LgBlJcQk8mGFA5ZlhxX1gTPcrlbKobCjOWavidvjAnjreEAG+Ph03yn21SVgmZfg9druAW5XK9mI2Y5HOct2gFUIbuH25w/EAfBmTRjgqH9ks1RK6VDBx9B5a+IF3sc1DbCE5TqoBEvb7drfE/N431xrx4MDrKwPA5D0Zeg8FxehwXvckHfh+icmVzCt7vfRxTkt/VmMzopinLv1IrxW03VTOTdaBKpjAbynOo6b/hzfwj46hxmO/ZQPGGZdGYac2plYZOgOSU4+s8HoFKxSzk2hHKBHg3VgntUnnxExI6AGIH3Y1NfGdmAufInHKk2ik48umBgRsusK3LDhbL9c6biYAZ1suyglMUbpILfX+R8QgNTUO77sg8beX58xeuAxrO3JeL7Pt4jjG3+5+lPf3UldpDlvH+++mXqgY/LlSj8srw1kcfsxMcZhFA1ASx0WYgDglSzhl9IfPcNpUQHwUro20iStNQsf47+v5ZjN6072lpy4Mrqw3BV81eSYKSPKjCq1D0ptc4Qx/6UK4a8XjY6hdcmUoJi86FsCCL2aIUQSdszGRHsYvylMWusRFNuLotoReh2UXs1CDXpXo9cl2l5ElwjxtblPEn50o0ZQQUmGf74ToZlro0+h8x4tMHhuvyezngAAAABJRU5ErkJggg==" InformativeScreenshot="ffafa7b3887e663d1bf9651f734473c5.png" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" Url="[&quot;https://acme-test.uipath.com/work-items/&quot; + in_Wiid]" />
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ACME System 1" sap:VirtualizedContainerService.HintSize="882,1424" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="4273f9d2-51c2-4d81-a5bf-c13007e686c5" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ACME System 1" sap:VirtualizedContainerService.HintSize="882,1424" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="4273f9d2-51c2-4d81-a5bf-c13007e686c5" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>

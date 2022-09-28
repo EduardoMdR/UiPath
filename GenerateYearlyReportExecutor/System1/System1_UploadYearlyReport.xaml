@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="System1_UploadYearlyReport" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="System1_UploadYearlyReport" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_TaxId" Type="InArgument(x:String)" />
     <x:Property Name="in_ReportPath" Type="InArgument(x:String)" />
@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,2536</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,2412</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1_UploadYearlyReport_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -79,22 +79,21 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_UploadYearlyReport" sap:VirtualizedContainerService.HintSize="476,2471" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_UploadYearlyReport" sap:VirtualizedContainerService.HintSize="476,2347" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Edge: ACME System 1 - Upload Yearly Report" sap:VirtualizedContainerService.HintSize="434,2379" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9e9c2c6c-2071-43e2-8252-b645f0d84648" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ACME System 1 - Upload Yearly Report" sap:VirtualizedContainerService.HintSize="434,2255" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="9e9c2c6c-2071-43e2-8252-b645f0d84648" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,2163" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,2039" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -104,7 +103,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/reports/upload" DesignTimeRectangle="182, 413, 485, 34" ElementType="InputBox" FriendlyName="'INPUT vendorTaxID'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="746b5758-ba3b-4ba9-a3dd-cd792940fa75" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAekAAAAmCAYAAADgB2NCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGDSURBVHhe7dgxisJQGIXR2f/aJCtIZyGCiAgBxZg33CEJWkxp/Itz4BZ5ef1H8tMAgJJEGgCKeov0MAyt7/vWdV3b7XZmZma2wdLd9DcdfrVGOi9yab/ft9Pp1M7ns5mZmW2wdDf9TYdfQ71GOgXPhev12u73e3s+n2ZmZrbB0t30Nx1OjxdrpFPvy+XSxnFs0zTNpwDAp6W76W86nB4v1kjnn/jtdhNoAPiC9DcdTo8Xb5HOJzcA8B3psEgDQEEiDQBFiTQAFCXSAFCUSANAUSINAEWJNAAUJdIAUJRIA0BRIg0ARYk0ABQl0gBQlEgDQFEiDQBFiTQAFCXSAFCUSANAUSINAEWJNAAUJdIAUJRIA0BRIg0ARYk0ABQl0gBQ1L+R7rquPR6P+QkA2Fo6nB4v1kj3fd8Oh0Obpmk+AQC2kv6mw+nxYo30MAx/9T4ej20cx/kUAPi0dDf9TYfT48Ua6ciLFDyX8k/czMzMPr90N/19DXS8RRoAqEOkAaCk1n4BOGRylpSr+hAAAAAASUVORK5CYII=" InformativeScreenshot="0107d5bb7c6e5c169c65c58ee865986c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Upload Yearly Report' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="182, 388, 93, 20" ElementType="Text" FriendlyName="'Vendor TaxID'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Vendor TaxID:' check:innerText='Vendor TaxID:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAAYCAYAAADqK5OqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVGhD7ZXtjcMgDIZvJ+ZqVom6STJJ1TEqdQcuJPiD15BQNb2iE6/kHyVgGz/G/fFdX1eH0IA6hAbUITSgDqEBdQgNqENoQBHC008X551zfrxtK6K7H5d15wY/PeLSmbqNa9xhfsaFc/Sch9Vvyew960W+ycf9mo/hrvdtw4H4JXDSeDAWqdbhy/rPEIJdpqXF9yXj6DH5YT04Lr0vogAUML1c+jp470y+gqX+5GXFbzkInEu0pAHo/OhHuvxBg1DOOoaBpIrF32gNalOCkIKVe3Jc8gNgkv8EcmYOQfDUpMjFjuAiydhDszHBOHENcbOjrjYQ6HWDCSQ9nu2oroOwCKdIDQQ+FDdx0VcnlIzqbOhihkBBwZ9c3oJDH/mChN8C4aj4JAMBhcUKwmZQ36ohFIqOSiHwBcOYocvTyLEdyBYTtMnEMwA1KUYCkmIo0EE1e3ZUhLBT6CBuKoj1YQjicLiO4GAHQtzzPoTMaws6GwJ2Pv5eJS8wmC5wNYSsXysDgQ9Gk4IVCqR0BEF8kw+5KMXhJjBxye/7EDBP+q6LxWtkqpvrIGDeZVkI6jBe1CQWrZwMQEh8p8ZFxxFBxj7Og2CMIVCMbRRjY5QgZE3BK42nDARV7MwzQhDSsZJMGUIQXTDYcsl5ex3az/6sfh+CyYH//zafWHTJZ4NSDQHr9wqErr9Vh9CAOoQG1CE0oA6hAXUIDahD+Lq8/wWcndZhbnQnJwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -115,7 +114,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/reports/upload" DesignTimeRectangle="182, 487, 220, 34" ElementType="Button" FriendlyName="'---'" FullSelectorArgument="&lt;webctrl aria-role='button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='BUTTON' type='button' class='btn dropdown-toggle bs-placeholder btn-default' aaname='---' check:innerText='---' /&gt;" Guid="0faad9aa-9723-4192-9d6e-e2b3f84bb2a3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOAAAAAmCAYAAADdnJdIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFBSURBVHhe7d1BasJQFIbR7n8H2YAbKO7AzoJTKbgCO3YWeO0PNY0QB2ripXAO3EGSO/00o7y3BpQRIBS6CvB8Prfj8dj2+33r+94Ys9CkqbSVxqbGAPMgS6fTqQ3D8HsXWEKaSltpbBrhGGDqzAKwnjSW1i7GAFOmfz5YVxpLaxdjgHlPBdY3bU2A8GIChEIChEIChEIChEIChEIChEIChEIChEIChEIChDukja7rZueRbgQId5qL8NFmBAgPmEb4TC+LBfj1sbn6RXg/tHbY/l133abtPndtM9nptj9L8E+lk2fii8UCBO4nQCgkQCgkQCgkQCgkQCgkQCgkQCgkQCgkQCgkQCg0G6BP08P6bn6a3uEssL6bh7M4ngzWk6bSVhqbPZ4s8iB1ZinvqcaYZSZNpa1pfHEVIPBaAoQyrX0Dikk3p32XY5MAAAAASUVORK5CYII=" InformativeScreenshot="7e8e34f249e49e75bb95f22b32cc6367.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Upload Yearly Report' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="182, 462, 34, 20" ElementType="Text" FriendlyName="'Year'" FullSelectorArgument="&lt;webctrl aaname='Year:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Year:' tag='LABEL' type='' class='' check:innerText='Year:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAYCAYAAACWTY9zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEESURBVEhL7ZNhDoMgDIV3J84lVyHeBE9iOIbJ7tABtlAKbpLNxR+8pIkWTL++1gfcVAOsVwOsVwOsVwnMzQqU8jE7zKBWs+eVAXFyqZhjDkwEUGBWTMET7CRz/1E5SnJnsh7JYy16f2cuplwMDXbDg6jcHAVviKZiZjaFzYIOz1iTJHaMO0RF8ghLKAo6z9+2z9m6UISGz4F50UUMvdB1Ksx2DR3Od7jofnb1cI8bqsG8kjNFF/WYUohCpTM12Jl9bYKlXSsKvgGLDUiHjh37MVhjlFzVrlAjl4OxEYuIhcRu5vgAdnr5gw7AgiQcX/ziLHwrfo7vwW6gAdarAdarAdYngBfy5AUmfjIPaQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -136,7 +135,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="183, 410, 255, 15" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="4d134c93-5222-4830-9b76-596dba1490c0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQMAAAATCAYAAACUcGjkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABaSURBVHhe7dShEcAwEMCwjvX7k4yV9gxCOkIEhMz9zMwGMAMgZwZrrV8E7mEGQMwAiBkAMQMgZgDEDICYARAzAGIGQMwAiBkAMQMgZgDEDICcGQB3MwPgM/sFo3/eJDFepUsAAAAASUVORK5CYII=" InformativeScreenshot="1da66aae0e1c5d3585ad6e0bb931029d.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="138, 409, 36, 15" ElementType="Text" FriendlyName="'&amp;Nome'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='&amp;amp;Nome:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='&amp;amp;Nome:' check:text='&amp;amp;Nome:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAATCAYAAADiQ08DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADmSURBVEhL7ZPtDQMhCIY7lqu4irO4iqu4CuVDT/Cquca08Yckb3IgB4+iL+cc7KwDuKoDuCoFGCABWgomQeIZotex/6kDzJAzMeqkzQBjiAgZwffxbQARJOCsc/S3OPseN0BXoVg7bbVBteZjy241+zoJAsWksTqcAeD8W0FxE7t2NaBm7BYo9guIqSlrnPccEEXJ/GBUnIFqE5Gk0Xf3/8zvpsB2e5yiMaDzQNNJ4VeAts5IE0DUtdMap5wKVNcHY5v6UsfcSdJXIy6SS67iZjxPgT74pg4ajXgOuKcO4KoO4JocvAGhrsCwYcp17wAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -174,7 +173,6 @@
                 <uix:TargetAnchorable DesignTimeRectangle="834, 170, 64, 32" ElementType="Button" FriendlyName="'push button OK'" FullSelectorArgument="&lt;ctrl name='acme-test.uipath.com diz' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='acme-test.uipath.com diz' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' automationid='' /&gt;" Guid="02eb26ac-eb5a-4ccd-9079-0243c9ce1fbf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAYAAAAw55zoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHCSURBVGhD7Zq9agJBEMft8xA+Q57AUrAPvkHSBCQvYJvSKm0sLNJY2AVSxCIQGxEPFMM1JwoqIl4QvxDhn1n39rybS3ubgLPwg/0YDuanM3ugmUKhAOGMCGGEQq5vHnB1W0fm/v2iUDmr3BNCLlGGQeWeEPJb4CUhQhgihCFCGCKEIUIYIoQhQhgihPEHQrqo9NfwDwjGAZ47QrFszicY0K7vunpdHqKlYhdz5GPPSQfLQj5RGR9PEgbOEHfPX3hsrzClnd1sEiQcFdJBdUbxhzWqT/xZ6WBXSG1xSt5rd2P72Y8V7R7Raqj1WUi+tcaO5DXrn7H4NLEqJOdsKVX6tMPyMGgJ034vnPvjJbxATDYWmy5WhZRcagabJUqJMxfNjSkTLUSPLV4slYrBqpBif09J0jckcaYleE4nnPvu3GozNVgVkml8U09I9pAc9Qpgj9eaWhshVCr1JXwzj8SniV0h5taI3jIOXcG0sxuPgqTPQtStdCoz1XDf7DRWy0KIcg8Vd3uSoId+DzmXRVSIWuv+YuvqtS/knyNCGCKEIUIYIoQhQhgihCFCGCKEIUIYCSHyYzcTIn+HYEIEjQiJUcAPG6a2nyMtnRcAAAAASUVORK5CYII=" InformativeScreenshot="98650f0ee33b23e26ceead3a016c1630.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Upload Yearly Report - Trabalho — Microsoft​ Edg*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Upload id&quot; + out_UploadId]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
