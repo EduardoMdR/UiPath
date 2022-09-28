@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,3980</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,4042</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1_CreatYearlyReport_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="72">
@@ -92,7 +92,7 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_CreatYearlyReport" sap:VirtualizedContainerService.HintSize="1093,3915" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_CreatYearlyReport" sap:VirtualizedContainerService.HintSize="1093,3977" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_YearReport" />
       <Variable x:TypeArguments="s:String[]" Default="[{&quot;january&quot;, &quot;february&quot;, &quot;march&quot;, &quot;april&quot;, &quot;may&quot;, &quot;june&quot;, &quot;july&quot;, &quot;august&quot;, &quot;september&quot;, &quot;october&quot;, &quot;november&quot;, &quot;december&quot;}]" Name="Months" />
@@ -111,13 +111,13 @@
         <InArgument x:TypeArguments="sd:DataTable">[new DataTable]</InArgument>
       </Assign.Value>
     </Assign>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ACME System 1 - Download Monthly Invoices" sap:VirtualizedContainerService.HintSize="1051,3723" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="23cfbe6d-5df1-42e4-89cb-c9ff14b2b3c3" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ACME System 1 - Download Monthly Invoices" sap:VirtualizedContainerService.HintSize="1051,3785" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="23cfbe6d-5df1-42e4-89cb-c9ff14b2b3c3" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1017,3507" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1017,3569" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -150,13 +150,13 @@
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/reports/download" DesignTimeRectangle="203, 610, 31, 20" ElementType="Text" FriendlyName="'2021'" FullSelectorArgument="&lt;webctrl aaname='2021' parentid='searchForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2021' parentid='searchForm' tag='SPAN' type='' class='text' check:innerText='2021' /&gt;" Guid="1bf7e2cf-40fa-41d2-84e4-7bacbc303e41" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD2SURBVEhL7ZPdDYQgDIBvJ+aSVYib4CTGMUzcoSdtFaktytPdA19Cwn8/oHzgj+gyFl3GostYCJkFgnPgjjIu3H9Qjvtp435im3xe6zzElQcEOO+2dyFDgXKADeJQa9P8MFOLRMLey8yhbDOncFVGW5z6hrhrcF2M5xNK0QT1HbKwRvB4YwHC+CSjgMFY5lo/MU5PlDeXZCLXl3YZ5RnkBnhaXUaVZxplOFEvC1pkcG4lgRtk7iKJt8/0JJJ4J8NJJr8sUk1gAoOYOZR5IUM3ooogjV+7wqMMbZZOJss1AD8hFylWrpNzMg058zu6jEWXsegyOgBfR2xKrSv25VEAAAAASUVORK5CYII=" InformativeScreenshot="7035246f19cf8903ca716cde3a7d94e0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Download Monthly Report' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="975,2509" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Months]">
+            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="975,2571" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Months]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="939,2384" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="939,2446" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Boolean" Name="NoReportMonth" />
                     </Sequence.Variables>
@@ -258,7 +258,7 @@
                         </ui:Target>
                       </ui:UiElementExists.Target>
                     </ui:UiElementExists>
-                    <If Condition="[NoReportMonth]" sap:VirtualizedContainerService.HintSize="897,1560" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If Condition="[NoReportMonth]" sap:VirtualizedContainerService.HintSize="897,1622" sap2010:WorkflowViewState.IdRef="If_1">
                       <If.Then>
                         <Sequence sap:VirtualizedContainerService.HintSize="376,250" sap2010:WorkflowViewState.IdRef="Sequence_3">
                           <sap:WorkflowViewStateService.ViewState>
@@ -274,7 +274,7 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="476,1401" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,1463" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="ReportFilePah" />
                             <Variable x:TypeArguments="sd:DataTable" Name="dt_MonthyReport" />
@@ -284,6 +284,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
+                          <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
                           <uix:NClick ClickType="Single" DisplayName="Click 'Salvar como'" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="23cfbe6d-5df1-42e4-89cb-c9ff14b2b3c3" Version="V1">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="174, 78, 80, 23" ElementType="Text" FriendlyName="'Salvar como'" FullSelectorArgument="&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl name='Downloads recentes' role='list' /&gt;&lt;ctrl name='O que você quer fazer com Report-IT213456-1 (2).csv?' role='list item' /&gt;&lt;ctrl name='Salvar como Mais opções' role='menu button' /&gt;&lt;ctrl name='Salvar como' role='push button' /&gt;&lt;ctrl name='Salvar como' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl name='Downloads recentes' role='list' /&gt;&lt;ctrl name='O que você quer fazer com Report-IT213456-1 (2).csv?' role='list item' /&gt;&lt;ctrl name='Salvar como Mais opções' role='menu button' /&gt;&lt;ctrl name='Salvar como' role='push button' /&gt;&lt;ctrl name='Salvar como' role='text' automationid='' check:fulltext='Salvar como' /&gt;" Guid="c6b4781a-c197-4943-a717-82472410dbce" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAAXCAYAAACcTMh5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHtSURBVFhH7ZQxrsJADET/QXMersAxaFNyAioaqGnSUNBQUOTrRQyaOJuE/O2+bGlEvN712LNmf5qm6RN/RwpYiRSwEilgJVLASqSAlUgBKzER8Hg89m63220UL2G32/X3+304W4r/Z4wEPJ/PgxAIorXT6TTyS0gB32DaENHXvkEK+EZpAmPcTYK5gCDm8DW+3fzC+O66btj7er36w+HwiQnikjlXrM9zq4br9TrElN/ric9VrLX0nE3eQDZhTg4oEnIvVsWrKQj3+33/eDw+zXsM/3K5DHv4Zu35fH58cs4JB5TLa9MTw5rn4hdfvBJDZ/nFJAqc7Bc3+72WEjeYCAi0eakZ1hGKQqNI/hT4Pj8PWHOxOVO6ZYH88MDn65Ff8HzxLJwu2FIPQom/KKDAAb9VfDfFIjlF8VdknSK8EGJcjMwvaU3AuXi8CMEbjs1zBl+9eQ+xH4H8cRgWBfTCYgGeLBLiI2DbtsOvGosFeH78NQFjDcJcw/hzEwg3vmqJOUoTSJ0aDK2NBPT3CZBMUxabw5+bQMUhc8LYBP6WCYQLTm9syxu4RcBYm+LODUYCEnQrFSRDmLkJBBBTgK9pn4zvLRMIYh3xUt2cm2/4vhVQZ9yieGDxL5xYRwpYiRSwEilgJVLASqSAVWj6X2rqxbt87pPkAAAAAElFTkSuQmCC" InformativeScreenshot="fb4cecd10dc378af98433784c5a674a5.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_2' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">

@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,1581</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,1621</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1_NavigateTo_WIDetails_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="37">
@@ -84,7 +84,7 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_NavigateTo_WIDetails" sap:VirtualizedContainerService.HintSize="924,1516" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_NavigateTo_WIDetails" sap:VirtualizedContainerService.HintSize="924,1556" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ClientInfo" />
       <Variable x:TypeArguments="x:String" Name="ClientName" />
@@ -97,20 +97,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ACME System 1" sap:VirtualizedContainerService.HintSize="882,1424" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="4273f9d2-51c2-4d81-a5bf-c13007e686c5" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ACME System 1" sap:VirtualizedContainerService.HintSize="882,1464" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="4273f9d2-51c2-4d81-a5bf-c13007e686c5" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Atualizando dados" sap:VirtualizedContainerService.HintSize="848,1208" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Atualizando dados" sap:VirtualizedContainerService.HintSize="848,1248" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Update Work Item'" sap:VirtualizedContainerService.HintSize="806,1114" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="4273f9d2-51c2-4d81-a5bf-c13007e686c5" Version="V1">
+            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Update Work Item'" sap:VirtualizedContainerService.HintSize="806,1154" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="4273f9d2-51c2-4d81-a5bf-c13007e686c5" Version="V1">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="376,898" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
@@ -118,7 +118,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Adicionando comentario (ClientHash)" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="4273f9d2-51c2-4d81-a5bf-c13007e686c5" Text="[in_UploadId]" Version="V1">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Adicionando comentario (ClientID)" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="4273f9d2-51c2-4d81-a5bf-c13007e686c5" Text="[in_UploadId]" Version="V1">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/update/87285110" DesignTimeRectangle="54, 344, 341, 54" ElementType="InputBox" FriendlyName="'TEXTAREA newComment'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='text' class='form-control' aaname='' /&gt;" Guid="a69a56e4-7127-478d-b641-1d61c875e188" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVkAAAA6CAYAAAAa5SqbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHNSURBVHhe7djBiuJAGIXReVqfVvIE2bloBBERAooxNdzBBG3GJjT+u3PgLqzU+kPqTwOgjMgCFHqJ7DAMre/71nVd2263Zma2culm+pmOPlsimw+5tNvt2uFwaMfj0czMVi7dTD/T0efQLpFNgXPhfD636/Xa7ve7mZmtXLqZfqaj6elsiWzqezqd2jiObZqmxykAa6Sb6Wc6mp7OlsjmTeFyuQgswC+ln+loejp7iWz+8gLwe+moyAIUEVmAQiILUEhkAQqJLEAhkQUoJLIAhUQWoJDIAhQSWYBCIgtQSGQBCoksQCGRBSgksgCFRBagkMgCFBJZgEIiC1BIZAEKiSxAIZEFKCSyAIVEFqCQyAIUElmAQiILUEhkAQqJLEAhkQUoJLIAhUQWoJDIAhQSWYBCIgtQSGQBCoksQCGRBSgksgBFNpuNyAJUSGBDZAE+bA5siCzABz0HNkQW4EO+B9abLMCH/C+w8TayXde12+32+AXAO+8CG+loejpbItv3ffv6+mrTND1OAPjup8Cmn+loejpbIjsMw7/67vf7No7j4xSANdLN9DMdTU9nS2QjH1LgXMqbgpmZrVu6mX4+BzZeIgvAZ4ksQJnW/gIjJ0tzORfQQwAAAABJRU5ErkJggg==" InformativeScreenshot="bdf49281bb4ec05626498096a19b1d00.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='WI-Update' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
